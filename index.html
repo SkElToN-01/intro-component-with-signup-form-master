@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+   <main class="container">
+    <div class="content">
+      <h1 class="title">Learn to code by watching others</h1>
+
+      <p class="desc">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+      but understanding how developers think is invaluable. </p>
+    </div>
+    <div class="signup">
+      <div class="signup-pricing">
+      <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+      </div>
+      <form name="myForm" action="#" class="signup-form" id="signup-form" novalidate>
+          <input type="text" placeholder="First Name" id="first-name" name="first-name" aria-label="First Name" required class="input loop"/>
+          <span class="text" id="first-name-text"></span>
+          <div class="space" id="first-name-space"></div>
+          <input type="text" placeholder="Last Name" id="last-name" name="last-name" aria-label="last Name" required class="input loop"/>
+          <span class="text" id="last-name-text"></span>
+          <div class="space" ></div>
+          <input type="email" placeholder="Email Address" id="email" name="email" aria-label="Email" required class="input loop"/>   
+          <span class="text" id="email-text"></span>
+          <div class="space" ></div>
+          <input type="password"  placeholder="Password" id="password" name="password" aria-label="Password" requires class="input loop"/>
+          <span class="text" id="password-text"></span>
+          <div class="space" ></div>
+          <input type="submit" value="Claim your free trial" aria-label="Submit" id="submit"/>
+        <p class="terms">
+          By clicking the button, you are agreeing to our <span>Terms and Services</span>
+        </p>
+      </form>
+    </div>
+  </main>
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
