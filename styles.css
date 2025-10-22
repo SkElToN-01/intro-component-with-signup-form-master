@@ -120,6 +120,7 @@ main{
     padding: 1em;
     font-size: 0.9em;
     font-weight: bolder;
+    margin-bottom: 10px;
 }
 
 .signup-form input:not([type="submit"]){
@@ -157,16 +158,31 @@ input[type="submit"]:hover{
 }
 
 .text{
+    position: absolute;
+    right: 1em;
+    bottom: -1.3em;
     font-style: italic;
     color: var(--red);
     font-size: 0.75rem;
-    margin-left: 13rem;
-    margin-top: 0.4rem;
+    margin-bottom: 5px;
 }
 
 
+@media (min-width: 768px){
+    .text{
+        right: 1em;
+        white-space: nowrap;
+    }
+}
 
 
+.form-control{
+    position: relative;
+}
+
+.space{
+    display: none;
+}
 
 
 .terms{
